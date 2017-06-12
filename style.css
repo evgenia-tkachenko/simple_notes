@@ -1,0 +1,118 @@
+body, html {
+	margin: 0 auto;
+	height: 100%;
+}
+
+#holder {
+	width: 100%;
+	height: 100%;
+	background: #7e440c;
+}
+
+#btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 20px;
+	padding: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.block {
+	position: absolute;
+	display: block;
+	width: 180px;
+	height: 180px;
+	box-shadow: 3px 3px 10px 5px black;
+	padding: 20px;
+	text-align: center;
+	font-size: 22px;
+	overflow: hidden;
+}
+
+.iks {
+	position: absolute;
+	background: url('bin.png');
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	top: -30px;
+	left: 190px;
+	transition: 0.6s;
+	opacity: 0.4;
+}
+
+.block:hover .iks {
+	top: 0px;
+}
+
+.block:hover .iks:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.colorBlock {
+	position: absolute;
+	background: url('gradient.png');
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+	top: -30px;
+	left: 190px;
+	border: 1px solid black;
+	border-radius: 15%;
+	opacity: 0.6;
+	transition: 0.6s;
+}
+
+.block:hover .colorBlock {
+	top: 37px;
+	left: 190px;
+}
+
+.block:hover .colorBlock:hover {
+	opacity: 1;
+}
+
+.editArea {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	top: 20px;
+	left: 20px;
+}
+
+.inp {
+	font-size: 18px;
+	width: 180px;
+	height: 140px;
+	margin: 0 0 0 -3px;
+}
+
+.saveBtn {
+	display: block;
+	width: 186px;
+	height: 30px;
+	font-size: 17px;
+	margin: 0 8px 0 -3px;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.hint {
+	position: absolute;
+	top: 220px;
+	width: 180px;
+	height: 25px;
+	opacity: 0.6;
+	font-size: 15px;
+	transition: 0.6s;
+}
+
+.block:hover .hint {
+	top: 195px;
+}
